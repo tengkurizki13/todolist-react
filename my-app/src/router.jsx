@@ -2,7 +2,7 @@ import {
     createBrowserRouter, redirect,
   } from "react-router-dom";
 import App from "./App.jsx";
-import DetailPage from "./pages/DetailPage.jsx";
+import SchedulPage from "./pages/SchedulPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import HomePage from "./pages/HomePage.jsx";
 
@@ -19,8 +19,8 @@ import HomePage from "./pages/HomePage.jsx";
                 element: <HomePage />
              },
             {
-                path:"/items/:id",
-                element: <DetailPage />
+                path:"/schedule/:day",
+                element: <SchedulPage />
             }
         ]
       },
